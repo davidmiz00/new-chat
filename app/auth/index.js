@@ -61,7 +61,7 @@ var init = function(){
 
 	// Plug-in Facebook & Twitter Strategies
 	// passport.use(new FacebookStrategy(config.facebook, verifySocialAccount));
-	// passport.use(new TwitterStrategy(config.twitter, verifySocialAccount));
+	passport.use(new TwitterStrategy(config.twitter, verifySocialAccount));
 
 	return passport;
 }
